@@ -1,0 +1,241 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+/* img, */
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background-color: rgb(212, 200, 218);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.panel {
+  background-color: white;
+  border-radius: 11px;
+  padding: 15px 20px;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pricing-plan {
+  border-bottom: 1px solid rgba(19, 85, 172, 0.363);
+}
+.pricing-plan:last-child {
+  border-bottom: none;
+}
+.pricing-img {
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+.pricing-header {
+  color: rgb(75, 128, 108);
+  letter-spacing: 1.5px;
+  font-weight: 550;
+}
+.pricing-features {
+  margin: 50px 0 25px;
+  color: rgb(148, 122, 36);
+}
+.pricing-features-item {
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+  border-top: 1px solid rgba(19, 85, 172, 0.089);
+}
+.pricing-features-item:last-child {
+  border-bottom: 1px solid rgba(19, 85, 172, 0.089);
+}
+
+.pricing-price {
+  color: rgb(18, 119, 105);
+  display: block;
+  font-size: 2rem;
+  font-weight: 650;
+  margin-bottom: 4px;
+}
+
+.pricing-button {
+  border: 1px solid rgba(139, 106, 106, 0.246);
+  border-radius: 20px;
+  color: rgb(15, 15, 185);
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px 0;
+  transition: background-color 150ms ease-in-out;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: rgba(112, 78, 85, 0.15);
+  border-color: rgba(87, 63, 67, 0.056);
+}
+
+.pricing-button.is-featured {
+  background-color: rgba(131, 81, 91, 0.575);
+  border-color: rgba(107, 103, 221, 0.13);
+  color: white;
+}
+
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:focus {
+  background-color: rgba(131, 81, 91, 0.705);
+}
+
+@media (min-width: 900px) {
+  .panel {
+    flex-direction: row;
+  }
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid rgba(19, 172, 121, 0.178);
+    padding: 40px 50px;
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+}
+
+img {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
